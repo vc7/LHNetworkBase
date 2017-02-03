@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/vc7/LHNetworkBase.git", :tag => "#{s.version}" }
 
-  s.source_files  = "LHNetworkBase"
+  s.source_files  = "LHNetworkBase/*{swift}"
 
   s.requires_arc = true
 
