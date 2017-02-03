@@ -9,9 +9,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "LHNetworkBase"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A base networking layer built on top of Alamofire and SwiftyJSON."
-  s.description  = "Now is using just in personal projects, not going on public yet. But feel free to send issues or PRs."
   s.homepage     = "https://qiita.com/vc7"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
