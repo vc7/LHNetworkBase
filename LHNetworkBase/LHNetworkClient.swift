@@ -8,6 +8,24 @@
 import Alamofire
 import SwiftyJSON
 
-protocol LHNetworkClientType {
-    func request<Request: DataRequest>(networkRequest: Request, completionHandler: @escaping (Result<JSON>) -> Void)
+public struct LHNetworkClient: LHNetworkClientType {
+    
+    static let `default`: LHNetworkClient = {
+        let client = LHNetworkClient()
+        return client
+    }()
+    
+    public func request<Request: DataRequest>(networkRequest: Request, completionHandler: @escaping (Result<JSON>) -> Void) {
+        networkRequest
+            .validate()
+            .responseData { response in
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data: data)
+                completionHandler(Result.success(json))
+            case .failure(let error):
+                completionHandler(Result.failure(error))
+            }
+        }
+    }
 }

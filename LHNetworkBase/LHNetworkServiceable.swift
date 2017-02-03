@@ -7,7 +7,7 @@
 
 import Alamofire
 
-protocol LHNetworkServiceable {
+public protocol LHNetworkServiceable {
     var route: LHNetworkRouteType { get }
     var networkClient: LHNetworkClientType { get set }
 }

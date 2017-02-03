@@ -8,7 +8,7 @@
 import Alamofire
 import SwiftyJSON
 
-protocol LHNetworkRouteType {
+public protocol LHNetworkRouteType {
     var config: LHNetworkConfigurationType { get }
     var endpoint: String { get }
     var rootEndpoint: String { get }

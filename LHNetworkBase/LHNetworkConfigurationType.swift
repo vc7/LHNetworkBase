@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol LHNetworkConfigurationType {
+public protocol LHNetworkConfigurationType {
     var baseUrl: String { get }
 }

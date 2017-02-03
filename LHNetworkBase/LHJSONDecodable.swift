@@ -7,6 +7,6 @@
 
 import SwiftyJSON
 
-protocol LHNJSONDecodable {
+public protocol LHNJSONDecodable {
     init?(json: JSON)
 }
