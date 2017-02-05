@@ -20,7 +20,7 @@ public protocol LHNetworkRouteType {
     var headers: [String: String] { get }
 }
 
-extension LHNetworkRouteType {
+public extension LHNetworkRouteType {
     var endpoint: String { return rootEndpoint + mainEndpoint }
     var rootEndpoint: String { return "" }
     var url: String { return baseUrl + endpoint }
