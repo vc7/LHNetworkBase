@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LHNetworkBase"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "A base networking layer built on top of Alamofire and SwiftyJSON."
   s.homepage     = "https://qiita.com/vc7"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/vc7/LHNetworkBase.git", :tag => "#{s.version}" }
 
-  s.source_files  = "LHNetworkBase/*{swift}"
+  s.source_files  = "LHNetworkBase/*.{swift}"
 
   s.requires_arc = true
 
