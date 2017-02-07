@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LHNetworkBase"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A base networking layer built on top of Alamofire and SwiftyJSON."
   s.homepage     = "https://qiita.com/vc7"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/vince78718"
 
   s.platform     = :ios
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/vc7/LHNetworkBase.git", :tag => "#{s.version}" }
 
